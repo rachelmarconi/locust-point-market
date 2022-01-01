@@ -1,4 +1,4 @@
-#filler{
+#container{
 	width:80%;
 	margin: 0 auto;
 }
@@ -6,34 +6,61 @@
 body{
 	width: 100%;
 	background-color: #F0EBC0;
-}
-
-#top{
-	background-color: black;
-	color:white;
+	font-family: Hind, sans-serif;
 }
 
 p{
-	font-size:1em;
+	font-size: 1em;
 }
 
-#headline{
-	font-family: Hind, sans-serif;
+#top-module{
+	border-bottom: 1px solid black;
+	margin: 15px 20px;
+}
+
+#title{
 	font-size: 3.5em;
 	text-align: center;
 	margin-bottom: 2px;
 }
 
-#byline{
-	font-family: Hind, sans-serif;
+.motto{
 	font-size: 1.5em;
 	text-align: center;
 	font-style: italic;
 }
 
-.chapter-top{
-	font-family: Hind, sans-serif;
-	font-size: 2em;
+.contact{
+	line-height: .5em;
+	font-size: 1em;
+	text-align: center;
+	font-style: italic;
+}
+
+.module{
+	padding-top: 20px;
+}
+
+.module-title{
+	font-size: 1.5em;
+}
+
+#soup-module li{
+	list-style: none;
+}
+
+#sidebar{
+	display: table-cell;
+	background-color: white;
+	height: 100%;
+	width: 30%;
+	border: solid 1px black;
+	padding: 20px;
+}
+
+#menu{
+	display: table-cell;
+	padding-right: 20px;
 }
 
 .photo{
@@ -46,12 +73,6 @@ p{
 	font-size:.85em;
 }
 
-.photo-cred{
-	margin-left: 5px;
-	text-transform: uppercase;
-
-}
-
 #footer{	
 	padding-top:10px;
 	padding-bottom: 5px;
@@ -61,14 +82,11 @@ p{
 #footer p{
 	text-align: center;
 	color:white;
-
 }
 
 .box{
 	background-color: #B2E2E0;
 }
-.container p{
-	text-align: center
-}
+
 
 /*textured background like old building, cream*/

@@ -5,7 +5,7 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		 <!-- Bootstrap CSS -->
+		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
@@ -15,74 +15,69 @@
 		<!--Element stylesheet-->
 		<link rel="stylesheet" type="text/css" href="stylesheet.css">
 
+		<!--Javascript-->
+		<script type="module" src="file-reader.js" crossorigin></script>
+
 	</head>
 	<body>
-		
-		<!--BEGIN Navbar from bootstrap-->
-		<nav class="navbar navbar-expand-lg navbar-light bg-light" id="top">
-		  	<a class="navbar-brand" href="#">Locust Point Market</a>
-		  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		    	<span class="navbar-toggler-icon"></span>
-		  	</button>
 
-		  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-		    	<ul class="navbar-nav mr-auto">
-		      		<li class="nav-item active">
-		        		<a class="nav-link" href="#History">History <span class="sr-only">(current)</span></a>
-		      		</li>
-		      		<li class="nav-item active">
-		        		<a class="nav-link" href="#Menu">Menu <span class="sr-only">(current)</span></a>
-		      		</li>
-		    	</ul>
-		  	</div>
-		</nav>
-		<!--END Navbar from bootstrap-->
+		<div id="container">
 
-		<div id="filler">
+			<div id="top-module">
+				<p id="title">Locust Point Market</p>
+				<p class="motto">"Love that Locust Point!"</p>
+				<p class="contact">Call us: 301-733-2427</p>
+				<p class="contact">360 South Potomac St., Hagerstown</p>
 
-			<p id="headline">Locust Point Market</p>
-			<p id="byline">"Love that Locust Point!"</p>
-
-			<p class="chapter-top" id="History">Who We Are</p>
-
-			<p>We're a family-owned grocery store/deli in Hagerstown, Maryland. We've been serving the community since mid-1980's, and you'll love our homemade soups and famous steamers!</p>
-
-
-			<div class="photo">
-				<img src="images/flowers.jpg" alt="water drops on orange flowers" width=100%>
-				<p class="caption">Water drops cling to flowers after a storm.<span class="photo-cred">Rachel Logan/JOUR670</span></p>
-			</div>	
-
-
-			<!--BEGIN Grid system from bootstrap-->
-			<div class="container">
-		        <div class="row" id="Menu">
-
-		            <div class="box col-md-4">
-		                <p class="chapter-top">Soups</p>
-	                	<p>Potato and Green Bean</p>
-	                	<p>Pot Pie</p>
-		            </div>
-
-		            <div class="box col-md-4">
-		                <p class="chapter-top">Sandwiches and Subs</p>
-		                <p>WORDS</p>
-		            </div>
-
-		            <div class="box col-md-4">
-		                <p class="chapter-top">Deli Items</p>
-		                <p><strong>WORDS</strong></p>
-		            </div>
-		        </div>
+				<p>We're a family-owned grocery store and deli in Hagerstown, Maryland. We've been serving the community since mid-1980's, and you'll love our homemade soups and famous steamers!</p>
 			</div>
-			<!--END Grid system from bootstrap-->
+
+			<div id = "menu">
+			
+				<div id="soup-module" class="module">
+					<!--TODO: link soup price to file-->
+					<p class= "module-title">Soups</p>
+					<p class= "soup-price">Pint: $3.99 -- Quart: $5.99</p>
+
+					<ul>
+						<li><strong>Monday:</strong> Chili and Vegetable</li>
+						<li><strong>Tuesday:</strong> Bean and Chicken Noodle</li>
+						<li><strong>Wednesday:</strong> Pot Pie (ham, beef, or chicken) & Tomato</li>
+						<li><strong>Thursday:</strong> Beef Stew and *Manager’s Choice</li>
+						<li><strong>Friday:</strong> Macaroni, Crab, Clam and Chicken Corn</li>
+						<li><strong>Saturday:</strong> Cream of Potato and *Manager’s Choice</li>
+						<li><strong>Sunday:</strong> Vegetable</li>
+					</ul>
+				</div>
+
+
+				<div id="sandwich-module" class="module">
+					<p class= "module-title">Sandwiches</p>
+					<div id = "sandwich-menu">Filled by text file</div>
+				</div>
+
+				<div id="other-deli-module" class="module">
+					<p class= "module-title">Other Deli Items</p>
+				</div>
+
+			</div>
+
+			<div id = "sidebar">
+				<p id="hours">
+					Hours:<br>Open daily<br>6 a.m. - 7 p.m.
+					<br><br>
+					Phone:<br>301-733-2427
+					<br><br>
+					Visit us:<br>360 South Potomac St.<br>Hagerstown
+
+				</p>
+			</div>
 
 		</div>
 
 
 		<div id="footer">
-			<p>Copyright Rachel Logan</p>
-			<p>2020</p>
+			<p>Copyright Rachel Logan 2021</p>
 		</div>
 
 
