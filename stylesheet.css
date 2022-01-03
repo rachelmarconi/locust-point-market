@@ -72,6 +72,10 @@ p{
 	list-style: none;
 }
 
+th,td{
+		padding-right: 15px;
+}
+
 .photo{
 	width:80%;
 	margin: 0 auto;

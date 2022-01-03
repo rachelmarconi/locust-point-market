@@ -5,7 +5,7 @@ fetch('sandwiches-menu.csv')
 	.then(text => {
 		var sandwichList = text.split('\n')
 	
-		var result = "<table>"
+		var result = "<table><th></th><th>Sandwiches</th><th>Half Subs</th>"
 		for (var i = 1; i<sandwichList.length-1;i += 1){
 			var sandwich = sandwichList[i].split(',')
 			result += `<tr>
