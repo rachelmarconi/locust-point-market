@@ -33,7 +33,6 @@ p{
 #menu-and-sidebar{
 	display: flex;
 	height: 100%;
-	border: solid 1px black;
 	width:80%;
 	margin: 0 auto;
 }
@@ -55,7 +54,6 @@ p{
 	display: flex-inline;
 	position: relative;
 	padding-right: 20px;
-	border: solid 1px red;
 }
 
 .module{
@@ -64,6 +62,10 @@ p{
 
 .module-title{
 	font-size: 1.5em;
+}
+
+.module-content{
+	margin-left: 40px;
 }
 
 #soup-module li{
@@ -83,16 +85,14 @@ p{
 #footer{	
 	padding-top:10px;
 	padding-bottom: 5px;
-	background-color: black;
-	position: absolute;
-	bottom: 0;
+	background-color: lightslategrey;
 	width: 100%;
 
 }
 
 #footer p{
 	text-align: center;
-	color:white;
+	color:black;
 }
 
 .box{
