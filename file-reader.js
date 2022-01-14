@@ -1,4 +1,5 @@
-const tableDOM = document.getElementById("sandwich-menu");
+const sandwichTableDOM = document.getElementById("sandwich-menu");
+const soupDOM = document.getElementById("daily-soups")
 
 fetch('sandwiches-menu.csv')
 	.then(response => response.text())
@@ -15,7 +16,25 @@ fetch('sandwiches-menu.csv')
 						</tr>`
 		}
 		result += "</table>"
-		tableDOM.innerHTML = result
+		sandwichTableDOM.innerHTML = result
 
+	})
+
+fetch('soups-menu.csv')
+	.then(response => response.text())
+	.then(text => {
+		var soupList = text.split('\n')
+		var result = "<ul>"
+
+		for (var i = 0; i<soupList.length-1; i+=1){
+			var day = soupList[i].slice(0,soupList[i].indexOf(','))
+			var soups = soupList[i].slice(soupList[i].indexOf(',')+1,-1)
+
+			soups = soups.replaceAll("\"","")
+
+			result += `<li><strong>${day}:</strong> ${soups}</li>`
+		}
+		result += "</ul>"
+		soupDOM.innerHTML = result
 	})
 
